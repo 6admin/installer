@@ -15,4 +15,4 @@ cd 6admin
 
 composer install --no-plugins --no-scripts
 
-sudo export DEBIAN_FRONTEND=dialog
+export DEBIAN_FRONTEND=dialog
