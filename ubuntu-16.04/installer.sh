@@ -14,5 +14,7 @@ git clone https://github.com/6admin/6admin.git
 cd 6admin
 
 composer install --no-plugins --no-scripts
+chmod +x six
+ln -s /opt/6admin/six /usr/local/bin/six
 
 export DEBIAN_FRONTEND=dialog
