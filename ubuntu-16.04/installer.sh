@@ -13,7 +13,7 @@ cd /opt
 git clone https://github.com/6admin/6admin.git
 cd 6admin
 
-composer install --no-plugins --no-scripts
+composer install
 chmod +x six
 ln -s /opt/6admin/six /usr/local/bin/six
 
