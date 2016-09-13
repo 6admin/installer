@@ -12,13 +12,13 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 cd /opt
 git clone https://github.com/6admin/6admin.git
 
+# Install core dependencies (update as we are on dev)
+cd /opt/6admin/core
+composer update
+
 # Installing the six command
-cd 6admin
+cd /opt/6admin
 chmod +x six
 ln -s /opt/6admin/six /usr/local/bin/six
-
-# Install core dependencies (update as we are on dev)
-cd core
-composer update
 
 export DEBIAN_FRONTEND=dialog
