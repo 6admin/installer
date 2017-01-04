@@ -9,8 +9,12 @@ apt-get install -y git curl php7.0-cli php7.0-mbstring php7.0-xml zip
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Cloning 6admin
-cd /opt
-git clone https://github.com/6admin/6admin.git
+mkdir /opt/6admin
+cd /opt/6admin
+git init
+git remote add origin https://github.com/6admin/6admin.git
+git fetch
+git checkout -t origin/master
 
 # Install core dependencies (update as we are on dev)
 cd /opt/6admin/core
